@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Near Me</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirm">Confirm</string>
+    <string name="mail_example">nearme@gmail.com</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="my_groupes">My groupes</string>
+    <string name="invitations">Invitations</string>
+    <string name="invited">Invited</string>
+    <string name="settings">Settings</string>
+    <string name="open">Open</string>
+    <string name="close">CLose</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+</resources>
