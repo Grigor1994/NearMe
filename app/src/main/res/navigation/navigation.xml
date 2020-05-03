@@ -6,26 +6,32 @@
     app:startDestination="@id/mainFragment">
 
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.grigor.nearme.ui.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main">
-        <action
-            android:id="@+id/action_mainFragment_to_loginFragment"
-            app:destination="@id/loginFragment"
-            app:popUpToInclusive="false" />
-        <action
-            android:id="@+id/action_mainFragment_to_home_navigation"
-            app:destination="@id/home_navigation" />
-    </fragment>
-    <fragment
         android:id="@+id/loginFragment"
         android:name="com.grigor.nearme.ui.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login">
         <action
-            android:id="@+id/action_loginFragment_to_home_navigation"
-            app:destination="@id/home_navigation" />
+            android:id="@+id/action_loginFragment_to_homeActivity"
+            app:destination="@id/homeActivity"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true" />
     </fragment>
-    <include app:graph="@navigation/home_navigation" />
+
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.grigor.nearme.HomeActivity"/>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.grigor.nearme.ui.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_mainFragment_to_homeActivity"
+            app:destination="@id/homeActivity"
+            app:popUpToInclusive="false" />
+    </fragment>
 </navigation>
