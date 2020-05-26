@@ -7,13 +7,13 @@
 
         <variable
             name="viewmodel"
-            type="com.grigor.nearme.viewmodel.LoginViewModel" />
+            type="com.grigor.nearme.ui.login.LoginViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.LoginFragment">
+        tools:context=".ui.login.LoginFragment">
 
         <EditText
             android:id="@+id/userEmaileditText"

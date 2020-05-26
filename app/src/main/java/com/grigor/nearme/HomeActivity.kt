@@ -1,23 +1,17 @@
 package com.grigor.nearme
 
 import android.os.Bundle
-import android.os.Handler
-import android.util.Log
-import android.view.Menu
-import android.widget.Toast
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.navigation.NavigationView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import androidx.core.view.GravityCompat
-import kotlinx.android.synthetic.main.activity_home.*
+import com.google.android.material.navigation.NavigationView
+import com.grigor.nearme.ui.SectionsPagerAdapter
+import kotlinx.android.synthetic.main.tab_bar_home.*
 
 class HomeActivity : AppCompatActivity() {
 
@@ -27,10 +21,21 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        Log.i("HomeActivity", "Second Activity Started")
+//        val tabsToolbar: Toolbar = findViewById(R.id.tabs_toolbar)
+//        tabsToolbar.title = "Near Me"
+//        setSupportActionBar(tabsToolbar)
+
+//        // set adapter
+        val fragmentAdapter = SectionsPagerAdapter(this, supportFragmentManager)
+        view_pager.adapter = fragmentAdapter
+
+        tabLayout.setupWithViewPager(view_pager)
+
+//        Log.i("HomeActivity", "Second Activity Started")
 //        val fab: FloatingActionButton = findViewById(R.id.fab)
 //        fab.setOnClickListener { view ->
 //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
@@ -59,6 +64,11 @@ class HomeActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    companion object {
+        const val LOCATION_SETTING_REQUEST = 999
+        const val STYLE_URL = "mapbox://styles/grigor94/cka419g0z0y181iqqr87u5cx6"
     }
 
 //    override fun onBackPressed() {

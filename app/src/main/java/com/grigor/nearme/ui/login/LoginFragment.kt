@@ -1,18 +1,16 @@
-package com.grigor.nearme.ui
+package com.grigor.nearme.ui.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
-import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.grigor.nearme.databinding.FragmentLoginBinding
-import com.grigor.nearme.viewmodel.LoginViewModel
 
 
 class LoginFragment : Fragment() {
@@ -28,13 +26,10 @@ class LoginFragment : Fragment() {
 //        isAuthenticated()
         confirmAuthentication()
         val navController = findNavController()
-
         checkValidation(navController)
-
 //        showAlert()
         return binding.root
     }
-
 
     private fun confirmAuthentication() {
         binding.confirmButton.setOnClickListener {

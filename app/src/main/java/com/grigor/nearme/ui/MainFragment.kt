@@ -10,8 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.grigor.nearme.databinding.FragmentMainBinding
-import com.grigor.nearme.viewmodel.LoginViewModel
-import java.lang.Exception
+import com.grigor.nearme.ui.login.LoginViewModel
 
 class MainFragment : Fragment() {
     lateinit var binding: FragmentMainBinding

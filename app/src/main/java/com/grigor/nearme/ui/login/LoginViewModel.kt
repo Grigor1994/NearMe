@@ -1,4 +1,4 @@
-package com.grigor.nearme.viewmodel
+package com.grigor.nearme.ui.login
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
@@ -15,7 +15,8 @@ class LoginViewModel : ViewModel() {
     val userEmail: String
 
     init {
-        authenticationState.value = AuthenticationState.UNAUTHENTICATED
+        authenticationState.value =
+            AuthenticationState.UNAUTHENTICATED
         userEmail = ""
     }
 
@@ -28,10 +29,12 @@ class LoginViewModel : ViewModel() {
      */
     fun authenticate(userEmail: String) {
         if (emailIsValidForUser(userEmail)) {
-            authenticationState.value = AuthenticationState.AUTHENTICATED
+            authenticationState.value =
+                AuthenticationState.AUTHENTICATED
             Log.i("LoginViewmodel","Authenticated!")
         } else {
-            authenticationState.value = AuthenticationState.INVALID_AUTHENTICATION
+            authenticationState.value =
+                AuthenticationState.INVALID_AUTHENTICATION
             Log.i("LoginViewModel", "Email  isn't correct!")
         }
     }

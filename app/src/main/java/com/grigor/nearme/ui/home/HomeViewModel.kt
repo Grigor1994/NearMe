@@ -3,11 +3,31 @@ package com.grigor.nearme.ui.home
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.grigor.nearme.data.network.sun.api.SunResponse
+import com.grigor.nearme.data.repository.SunDataRepository
+import org.koin.core.KoinComponent
 
-class HomeViewModel : ViewModel() {
+class HomeViewModel(private val sunDataRepository: SunDataRepository) :
+    ViewModel(),
+    KoinComponent {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+    var sunResponseLiveData = MutableLiveData<SunResponse>()
+
+//    var response = { sunData: SunResponse -> sunResponseLiveData.value = sunData }
+
+    fun getSunData(lat: String, lng: String, date: String) {
+        sunDataRepository.getSunData(lat, lng, date) { response ->
+            sunResponseLiveData.value = response
+        }
     }
-    val text: LiveData<String> = _text
+
+    private val _sunriseTime = MutableLiveData<String>()
+    val sunriseTime: LiveData<String>
+        get() = _sunriseTime
+
+    private val _sunsetTime = MutableLiveData<String>()
+    val sunsetTime: LiveData<String>
+        get() = _sunsetTime
+
 }
+
