@@ -14,7 +14,6 @@ class App : Application() {
             modules(getKoinModules())
         }
     }
-
     private fun getKoinModules(): List<Module> {
         return listOf(appModule)
     }

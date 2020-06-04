@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+   >
 
-    <com.mapbox.mapboxsdk.maps.MapView
-        android:id="@+id/mapView"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        mapbox:mapbox_cameraZoom="12" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/colorPrimaryDark"
-        android:enabled="false"
-        android:text="Start navigation"
-        android:textColor="@color/whiteColor"
-        mapbox:layout_constraintStart_toStartOf="parent"
-        mapbox:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#ffffff"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabTextColor="#ffffff" />
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:src="@drawable/my_location_button"
-        android:layout_margin="20dp" />
-</FrameLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

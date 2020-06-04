@@ -20,10 +20,6 @@ class LoginViewModel : ViewModel() {
         userEmail = ""
     }
 
-//    fun refUseAuthentication() {
-//        authenticationState.value = AuthenticationState.UNAUTHENTICATED
-//    }
-
     /**
      * Check authentication.
      */

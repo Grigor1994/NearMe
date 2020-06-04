@@ -3,41 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/home_fragment">
 
     <fragment
-        android:id="@+id/nav_home"
+        android:id="@+id/home_fragment"
         android:name="com.grigor.nearme.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_home">
-
         <action
-            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-            app:destination="@id/nav_home_second" />
-    </fragment>
-    <fragment
-        android:id="@+id/nav_home_second"
-        android:name="com.grigor.nearme.ui.home.HomeSecondFragment"
-        android:label="@string/home_second"
-        tools:layout="@layout/fragment_home_second">
-        <action
-            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-            app:destination="@id/nav_home" />
-
-        <argument
-            android:name="myArg"
-            app:argType="string" />
+            android:id="@+id/action_home_fragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.grigor.nearme.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/editProfileFragment"
+        android:name="com.grigor.nearme.ui.profile.edit.profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_nav_groupes"
+            app:destination="@id/home_fragment" />
+    </fragment>
 
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.grigor.nearme.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
 </navigation>

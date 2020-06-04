@@ -5,9 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity">
-    <ImageView
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:scaleType="centerInside"-->
+<!--        android:src="@drawable/tenor" />-->
+    <pl.droidsonroids.gif.GifImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerInside"
-        android:src="@drawable/launch_logo" />
+        android:src="@drawable/earth_load"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

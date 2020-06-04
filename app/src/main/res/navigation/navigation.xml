@@ -21,6 +21,7 @@
     <activity
         android:id="@+id/homeActivity"
         android:name="com.grigor.nearme.HomeActivity"/>
+
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.grigor.nearme.ui.MainFragment"
@@ -34,4 +35,5 @@
             app:destination="@id/homeActivity"
             app:popUpToInclusive="false" />
     </fragment>
+
 </navigation>
