@@ -14,7 +14,6 @@
         android:orientation="vertical">
 
         <ImageButton
-            android:id="@+id/backToMain"
             android:layout_width="30dp"
             android:layout_height="35dp"
             android:layout_gravity="left"
@@ -24,7 +23,6 @@
             android:contentDescription="TODO" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_image"
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginTop="20dp"
@@ -36,7 +34,6 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="-20dp"/>
         <TextView
-            android:id="@+id/textViewName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Grigor Avetisyan"
@@ -53,7 +50,6 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/outlinedTextFieldName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name"
@@ -66,7 +62,6 @@
 
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/outlinedTextFieldSurname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Surname"
@@ -79,7 +74,6 @@
 
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/outlinedTextFieldEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"

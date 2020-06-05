@@ -2,32 +2,15 @@
     <string name="app_name">Near Me</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Edit Profile</string>
-    <string name="confirm">Confirm</string>
-    <string name="mail_example">nearme@gmail.com</string>
-    <string name="example_gmail_com">example@gmail.com</string>
-    <string name="enter_your_email_address">Enter your email address</string>
     <string name="my_groupes">My groupes</string>
     <string name="invitations">Invitations</string>
     <string name="invited">Invited</string>
     <string name="settings">Settings</string>
-    <string name="open">Open</string>
-    <string name="close">CLose</string>
     <string name="title_activity_home">HomeActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
     <string name="access_token">pk.eyJ1IjoiZ3JpZ29yOTQiLCJhIjoiY2s5c2JzZjg2MDhiNDNlcGNyMXF2amdkMyJ9.F1NKvcT_el0x9PAbgiLa4A</string>
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="night_mode_access_token">pk.eyJ1IjoiZ3JpZ29yOTQiLCJhIjoiY2s5cjI3cWt4MDh2djNmcWtrYmQwNGdsbCJ9.u73si_-UNY6pc-x9MS_3Gw</string>
-    <string name="home_second">Home Second</string>
-    <string name="tab_text_me">ME</string>
-    <string name="tab_text_friends">FRIENDS</string>
-    <string name="tab_text_staff">STAFF</string>
     <string name="search">Search</string>
+
 </resources>

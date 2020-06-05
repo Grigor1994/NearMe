@@ -1,6 +1,5 @@
 package com.grigor.nearme
 
-
 import android.Manifest
 import android.content.IntentSender
 import android.content.pm.PackageManager

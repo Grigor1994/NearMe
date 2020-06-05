@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "840376869602",
+    "firebase_url": "https://nearmecvweb.firebaseio.com",
+    "project_id": "nearmecvweb",
+    "storage_bucket": "nearmecvweb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840376869602:android:ee5c977f3170b6633634bb",
+        "android_client_info": {
+          "package_name": "com.grigor.nearme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840376869602-rhsul70sqskq6qc1f3vkq4m05c8e79lu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grigor.nearme",
+            "certificate_hash": "0d8e99e031f9ac6250ffd2742ee807ff57060f9d"
+          }
+        },
+        {
+          "client_id": "840376869602-5aif3is7qlfr6gnrari5peg4g07u2uhe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3u_-SRhsjcffM-wxsHjs7VUeMkKIj1xU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840376869602-5aif3is7qlfr6gnrari5peg4g07u2uhe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
